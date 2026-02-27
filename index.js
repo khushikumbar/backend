@@ -14,12 +14,10 @@ const app = express();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors(
-  {
-    origin: "https://frontend-61aq.vercel.app",
-    credentials: true,
-  }
-))
+app.use(cors({
+  origin: "https://frontend-61aq.vercel.app",
+  credentials: true,
+}));
 
 app.use('/user', authRouter);
 app.use("/task",taskrouter)
