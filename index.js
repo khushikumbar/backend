@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors(
   {
-    origin: "http://localhost:5173", // React frontend
+    origin: "https://frontend-61aq.vercel.app/",
     credentials: true,
   }
 ))
